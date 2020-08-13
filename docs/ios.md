@@ -51,9 +51,10 @@ Privacy - Photo Library Usage Description
 ```
 
 **5. Script**
-- Add `#import "AppDelegate.h"` into your ViewController.m
-- Add `@property (strong, nonatomic) AppDelegate *delegate;"` into your ViewController.m
-- Call initMakar to initialize MakarViewer and show `[self.delegate initMakar]`
+- Add `#import "AppDelegate.h"` into your ViewController.m.
+- Add `@property (strong, nonatomic) AppDelegate *delegate;"` into your ViewController.m.
+- Call `[self.delegate initMakar]` to initialize MakarViewer and show.
+- Call `[self.delegate unloadMakar]` to unload MakarViewer and receive a callback to UnityFrameworkListener after the unload completes. MakarViewer will release most of the memory it occupies, but not all of it. You will be able to run MakarViewer again.
 
 ## Workspace is ready
 Everything is ready to build, run and debug for both projects: Unity-iPhone and NativeObjc (select NativeObjc scheme to run Native App with integrated Unity or Unity-iPhone to run just Unity App part)
