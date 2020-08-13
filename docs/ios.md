@@ -27,7 +27,7 @@ Xcode workspace allows to work on multiple projects simultaneously and combine t
 
 **3. Add UnityFramework.framework**
 With this step we add Makar Viewer in the form of a framework to NativeiOSApp.
-- select NativeiOSApp target from NativeiOSApp project
+- select NativeObjc target from NativeObjc project
 - in "General" tab / "Frameworks, Libraries, and Embedded  Content" press +
 - Add Unity-iPhone/UnityFramework.framework
   <br><img src="images/ios/addToEmbeddedContent.png">
@@ -36,6 +36,6 @@ With this step we add Makar Viewer in the form of a framework to NativeiOSApp.
   <br><img src="images/ios/removeLink.png">
 
 ## Workspace is ready
-Everything is ready to build, run and debug for both projects: Unity-iPhone and NativeiOSApp (select NativeiOSApp scheme to run Native App with integrated Unity or Unity-iPhone to run just Unity App part)
+Everything is ready to build, run and debug for both projects: Unity-iPhone and NativeObjc (select NativeObjc scheme to run Native App with integrated Unity or Unity-iPhone to run just Unity App part)
 <br><img src="images/ios/selectTargetToBuild.png">
-If all went successfully at this point you should be able to run NativeiOSApp:
+If all went successfully at this point you should be able to run NativeObjc:
