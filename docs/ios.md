@@ -53,10 +53,29 @@ Privacy - Photo Library Usage Description
 **5. Script**
 - Add `#import "AppDelegate.h"` into your ViewController.m.
 - Add `@property (strong, nonatomic) AppDelegate *delegate;"` into your ViewController.m.
-- Call `[self.delegate initMakar]` to initialize MakarViewer and show.
-- Call this to unload MakarViewer and receive a callback to UnityFrameworkListener after the unload completes. MakarViewer will release most of the memory it occupies, but not all of it. You will be able to run MakarViewer again.
+- Initialize MakarViewer and show.
+```
+[self.delegate initMakar]
+```
+- Unload MakarViewer and receive a callback to UnityFrameworkListener after the unload completes. MakarViewer will release most of the memory it occupies, but not all of it. You will be able to run MakarViewer again.
 ```
 [self.delegate unloadMakar]
+```
+- Pause MakarViewer.
+```
+[self.delegate pauseMakar]
+[self.delegate resumeMakar]
+```
+
+- Call this method while a non-MakarViewer View is showing to also show a MakarViewer that’s already running.
+```
+[self.delegate showMakar]
+```
+
+- unload MakarViewer completely and receive a callback to UnityFrameworkListener when MakarViewer quits. MakarViewer will release all memory.
+//Note: You won’t be able to run MakarViewer again in the same process after this call. You can set quitHandler on AppController to override the default process kill.
+```
+[self.delegate quitMakar]
 ```
 
 ## Workspace is ready
