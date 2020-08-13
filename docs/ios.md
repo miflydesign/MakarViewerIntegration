@@ -43,3 +43,11 @@ With this step we add Makar Viewer in the form of a framework to NativeObjc.
 Everything is ready to build, run and debug for both projects: Unity-iPhone and NativeObjc (select NativeObjc scheme to run Native App with integrated Unity or Unity-iPhone to run just Unity App part)
 <br><img src="images/ios/selectTargetToBuild.png">
 If all went successfully at this point you should be able to run NativeObjc.
+
+License
+-------
+Copyright © MIND & IDEA FLY CO., LTD
+
+Contact
+-------
+<infomarkar@miflydesign.com>
