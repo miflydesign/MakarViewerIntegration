@@ -85,8 +85,8 @@ If all went successfully at this point you should be able to run NativeObjc.
 
 References
 -------
-- [Unity Documentation](https://docs.unity3d.com/Manual/UnityasaLibrary-iOS.html).
-- [Integrating Unity as a library into standard iOS app](https://github.com/Unity-Technologies/uaal-example).
+- [Unity Documentation](https://docs.unity3d.com/Manual/UnityasaLibrary-iOS.html)
+- [Integrating Unity as a library into standard iOS app](https://github.com/Unity-Technologies/uaal-example)
 
 License
 -------
