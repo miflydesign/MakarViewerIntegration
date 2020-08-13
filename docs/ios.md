@@ -50,6 +50,9 @@ Privacy - Photo Library Additions Usage Description
 Privacy - Photo Library Usage Description
 ```
 
+**5. Script**
+- Add `#import "AppDelegate.h"` into your ViewController.m
+
 ## Workspace is ready
 Everything is ready to build, run and debug for both projects: Unity-iPhone and NativeObjc (select NativeObjc scheme to run Native App with integrated Unity or Unity-iPhone to run just Unity App part)
 <br><img src="images/ios/selectTargetToBuild.png">
