@@ -2,7 +2,8 @@
 
 This document explains how to include Makar Viewer as a Library into standard iOS application. You can read more about [Unity as a Library](https://docs.unity3d.com/2019.3/Documentation/Manual/UnityasaLibrary.html).
 
-**Requirements:**
+Requirements
+--------------
 - Xcode 11.0+
 
 **0. Get Api Key**
@@ -10,7 +11,7 @@ This document explains how to include Makar Viewer as a Library into standard iO
 
 **1. Get source**
 - Download Makar Viewer Project [MakarViewer](https://github.com/Unity-Technologies/uaal-example). 
-- Clone or Download GitHub repo [NativeSwift](https://github.com/Unity-Technologies/uaal-example) or [NativeObjc](https://github.com/Unity-Technologies/uaal-example).
+- Clone or Download GitHub repo [Example](https://github.com/vml933/MakarViewerIntegration.git).
 - Create new foler named "Example", extract MakarViewer.zip in it and move NativeObjc Folder at same level.
 	<br><img src="images/ios/folderStructure.png">
 	- NativeObjc - this is simple Xcode single view application where we want to integrate our makar viewer project. It has some UI and is prepared to load viewer.
@@ -26,7 +27,7 @@ Xcode workspace allows to work on multiple projects simultaneously and combine t
   <br><img src="images/ios/workspaceProjects.png">
 
 **3. Add UnityFramework.framework**
-With this step we add Makar Viewer in the form of a framework to NativeiOSApp.
+With this step we add Makar Viewer in the form of a framework to NativeObjc.
 - select NativeObjc target from NativeObjc project
 - in "General" tab / "Frameworks, Libraries, and Embedded  Content" press +
 - Add Unity-iPhone/UnityFramework.framework
@@ -38,4 +39,4 @@ With this step we add Makar Viewer in the form of a framework to NativeiOSApp.
 ## Workspace is ready
 Everything is ready to build, run and debug for both projects: Unity-iPhone and NativeObjc (select NativeObjc scheme to run Native App with integrated Unity or Unity-iPhone to run just Unity App part)
 <br><img src="images/ios/selectTargetToBuild.png">
-If all went successfully at this point you should be able to run NativeObjc:
+If all went successfully at this point you should be able to run NativeObjc.
