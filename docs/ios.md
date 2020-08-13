@@ -13,8 +13,8 @@ This document explains how to include Makar Viewer as a Library into standard iO
 - Clone or Download GitHub repo [NativeSwift](https://github.com/Unity-Technologies/uaal-example) or [NativeObjc](https://github.com/Unity-Technologies/uaal-example).
 - Create new foler named "Example", extract MakarViewer.zip in it and move NativeObjc Folder at same level.
 	<br><img src="images/ios/folderStructure.png">
-    - ViewerProject - this is a makar viewer project made with Unity which will be integrated to the standard iOS application.
-    - NativeiOSApp - this is simple Xcode single view application where we want to integrate our makar viewer project. It has some UI and is prepared to load viewer.
+	- NativeObjc - this is simple Xcode single view application where we want to integrate our makar viewer project. It has some UI and is prepared to load viewer.
+    - MakarViewer - this is a makar viewer project made with Unity which will be integrated to the standard iOS application.
 
 **2. Setup Xcode workspace**
 Xcode workspace allows to work on multiple projects simultaneously and combine their products
