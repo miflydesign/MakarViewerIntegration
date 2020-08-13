@@ -42,15 +42,17 @@ With this step we add Makar Viewer in the form of a framework to NativeObjc.
 **4. Setup Privacy**
 - Add the following service setup to `info.plist` file
 ```
-Privacy - Location Always and When In Use Usage Description
-Privacy - Location When In Use Usage Description
-Privacy - Location Always Usage Description
 Privacy - Camera Usage Description
 Privacy - Photo Library Additions Usage Description
 Privacy - Photo Library Usage Description
+Privacy - Location Always and When In Use Usage Description
+Privacy - Location When In Use Usage Description
+Privacy - Location Always Usage Description
 ```
 
-**5. Script**
+Script
+--------------
+- Set valid `makarApiKey` value in AppDelegate.mm
 - Add `#import "AppDelegate.h"` into your ViewController.m.
 - Add `@property (strong, nonatomic) AppDelegate *delegate;"` into your ViewController.m.
 - Initialize MakarViewer and show.
