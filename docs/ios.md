@@ -2,14 +2,17 @@
 
 This document explains how to include Makar Viewer as a Library into standard iOS application. You can read more about [Unity as a Library](https://docs.unity3d.com/2019.3/Documentation/Manual/UnityasaLibrary.html).
 
+Pre-requisites
+--------------
+- Sign up and get API key from [Makar development](https://developer.makar.app). 
+
 Requirements
 --------------
 - Xcode 11.0+
 
-**0. Get Api Key**
-- Sign up and get API key from [Makar development](https://developer.makar.app). 
 
 **1. Get source**
+--------------
 - Download Makar Viewer Project [MakarViewer](https://github.com/Unity-Technologies/uaal-example). 
 - Clone or Download GitHub repo [Example](https://github.com/vml933/MakarViewerIntegration.git).
 - Create new foler named "Example", extract MakarViewer.zip in it and move NativeObjc Folder at same level.
