@@ -52,6 +52,8 @@ Privacy - Photo Library Usage Description
 
 **5. Script**
 - Add `#import "AppDelegate.h"` into your ViewController.m
+- Add `@property (strong, nonatomic) AppDelegate *delegate;"` into your ViewController.m
+- Call initMakar to initialize MakarViewer and show `[self.delegate initMakar]`
 
 ## Workspace is ready
 Everything is ready to build, run and debug for both projects: Unity-iPhone and NativeObjc (select NativeObjc scheme to run Native App with integrated Unity or Unity-iPhone to run just Unity App part)
