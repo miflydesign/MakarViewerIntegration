@@ -14,7 +14,7 @@ Getting Started
 --------------
 **1. Get source**
 - Download Makar Viewer Project [MakarViewer](https://github.com/Unity-Technologies/uaal-example). 
-- Clone or Download GitHub repo [Example](https://github.com/vml933/MakarViewerIntegration.git).
+- Clone or Download GitHub repo [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git).
 - Create new foler named "Example", extract MakarViewer.zip in it and move NativeObjc Folder at same level.
 	<br><img src="images/ios/folderStructure.png">
 	- NativeObjc - this is simple Xcode single view application where we want to integrate our makar viewer project. It has some UI and is prepared to load viewer.
@@ -38,6 +38,17 @@ With this step we add Makar Viewer in the form of a framework to NativeObjc.
 - in "Build Phases" tab, expand "Link Binary With Libraries"
 - remove UnityFramework.framework from the list (select it and press - )
   <br><img src="images/ios/removeLink.png">
+
+**4. Setup Privacy**
+Add the following service setup to `info.plist` file
+```
+Privacy - Location Always and When In Use Usage Description
+Privacy - Location When In Use Usage Description
+Privacy - Location Always Usage Description
+Privacy - Camera Usage Description
+Privacy - Photo Library Additions Usage Description
+Privacy - Photo Library Usage Description
+```
 
 ## Workspace is ready
 Everything is ready to build, run and debug for both projects: Unity-iPhone and NativeObjc (select NativeObjc scheme to run Native App with integrated Unity or Unity-iPhone to run just Unity App part)
