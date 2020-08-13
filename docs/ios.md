@@ -55,9 +55,13 @@ Script
 - Set valid `makarApiKey` value in AppDelegate.mm
 - Add `#import "AppDelegate.h"` into your ViewController.m.
 - Add `@property (strong, nonatomic) AppDelegate *delegate;"` into your ViewController.m.
-- Initialize MakarViewer and show.
+- Initialize MakarViewer and show user page.
 ```
-[self.delegate initMakar]
+[self.delegate showUserWith:@"USER_ACCOUNT"];
+```
+- Initialize MakarViewer and enter project.
+```
+[self.delegate showProjectWidth:@"PROJECT_ID" type:@"PROJECT_TYPE"];
 ```
 - Unload MakarViewer and receive a callback to UnityFrameworkListener after the unload completes. MakarViewer will release most of the memory it occupies, but not all of it. You will be able to run MakarViewer again.
 ```
