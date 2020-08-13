@@ -18,11 +18,11 @@ This document explains how to include Makar Viewer as a Library into standard iO
 
 **2. Setup Xcode workspace**
 Xcode workspace allows to work on multiple projects simultaneously and combine their products
-- open NativeiOSApp.xcodeproj from Xcode
+- open NativeObjc.xcodeproj from Xcode
 - create workspace and save it at Example/both.xcworkspace. (File / New / Workspace)
   <br><img src="images/ios/workspaceLocation.png">
-- close NativeiOSApp.xcodeproj project all Next steps are done from just created Workspace project
-- add NativeiOSApp.xcodeproj and generated Unity-iPhone.xcodeproj from step #2 to workspace on a same level ( File / Add Files to “both” )
+- close NativeObjc.xcodeproj project all Next steps are done from just created Workspace project
+- add NativeObjc.xcodeproj and Unity-iPhone.xcodeproj in MakarViewer folder to workspace on a same level ( File / Add Files to “both” )
   <br><img src="images/ios/workspaceProjects.png">
 
 **3. Add UnityFramework.framework**
