@@ -83,6 +83,11 @@ Everything is ready to build, run and debug for both projects: Unity-iPhone and 
 <br><img src="images/ios/selectTargetToBuild.png">
 If all went successfully at this point you should be able to run NativeObjc.
 
+References
+-------
+- [Unity Documentation](https://docs.unity3d.com/Manual/UnityasaLibrary-iOS.html).
+- [Integrating Unity as a library into standard iOS app](https://github.com/Unity-Technologies/uaal-example).
+
 License
 -------
 Copyright © MIND & IDEA FLY CO., LTD
