@@ -40,7 +40,7 @@ With this step we add Makar Viewer in the form of a framework to NativeObjc.
   <br><img src="images/ios/removeLink.png">
 
 **4. Setup Privacy**
-Add the following service setup to `info.plist` file
+- Add the following service setup to `info.plist` file
 ```
 Privacy - Location Always and When In Use Usage Description
 Privacy - Location When In Use Usage Description
