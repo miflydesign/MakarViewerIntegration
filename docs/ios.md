@@ -59,7 +59,7 @@ Script
 ```
 [self.delegate showUserWith:@"USER_ACCOUNT"];
 ```
-- Initialize MakarViewer and enter project.
+- Initialize MakarViewer and enter project. type must be "ar", "ar_slam", "vr"
 ```
 [self.delegate showProjectWidth:@"PROJECT_ID" type:@"PROJECT_TYPE"];
 ```
