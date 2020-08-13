@@ -1,0 +1,39 @@
+## Integrating Makar Viewer as a library into standard iOS app
+
+This document explains how to include Makar Viewer as a Library into standard iOS application. You can read more about [Unity as a Library](https://docs.unity3d.com/2019.3/Documentation/Manual/UnityasaLibrary.html).
+
+**Requirements:**
+- Xcode 11.0+
+
+**0. Get Api Key**
+- Sign up and get API key from [Makar development](https://developer.makar.app). 
+
+**1. Get source**
+- Download Makar Viewer Project [Viewer](https://github.com/Unity-Technologies/uaal-example). 
+- Clone or Download GitHub repo [Native-iOS-Swift](https://github.com/Unity-Technologies/uaal-example) or [Native-iOS-ObjC](https://github.com/Unity-Technologies/uaal-example).
+    - ViewerProject - this is a makar viewer project made with Unity which will be integrated to the standard iOS application.
+    - NativeiOSApp - this is simple Xcode single view application where we want to integrate our makar viewer project. It has some UI and is prepared to load viewer.
+
+**2. Setup Xcode workspace**
+Xcode workspace allows to work on multiple projects simultaneously and combine their products
+- open NativeiOSApp.xcodeproj from Xcode
+- create workspace and save it at Example/both.xcworkspace. (File / New / Workspace)
+  <br><img src="images/ios/workspaceLocation.png">
+- close NativeiOSApp.xcodeproj project all Next steps are done from just created Workspace project
+- add NativeiOSApp.xcodeproj and generated Unity-iPhone.xcodeproj from step #2 to workspace on a same level ( File / Add Files to “both” )
+  <br><img src="images/ios/workspaceProjects.png">
+
+**3. Add UnityFramework.framework**
+With this step we add Makar Viewer in the form of a framework to NativeiOSApp.
+- select NativeiOSApp target from NativeiOSApp project
+- in "General" tab / "Frameworks, Libraries, and Embedded  Content" press +
+- Add Unity-iPhone/UnityFramework.framework
+  <br><img src="images/ios/addToEmbeddedContent.png">
+- in "Build Phases" tab, expand "Link Binary With Libraries"
+- remove UnityFramework.framework from the list (select it and press - )
+  <br><img src="images/ios/removeLink.png">
+
+## Workspace is ready
+Everything is ready to build, run and debug for both projects: Unity-iPhone and NativeiOSApp (select NativeiOSApp scheme to run Native App with integrated Unity or Unity-iPhone to run just Unity App part)
+<br><img src="images/ios/selectTargetToBuild.png">
+If all went successfully at this point you should be able to run NativeiOSApp:
