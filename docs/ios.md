@@ -72,7 +72,7 @@ Privacy - Photo Library Usage Description
 [self.delegate showMakar]
 ```
 
-- unload MakarViewer completely and receive a callback to UnityFrameworkListener when MakarViewer quits. MakarViewer will release all memory.
+- unload MakarViewer completely and receive a callback to UnityFrameworkListener when MakarViewer quits. MakarViewer will release all memory.<br>
 //Note: You won’t be able to run MakarViewer again in the same process after this call. You can set quitHandler on AppController to override the default process kill.
 ```
 [self.delegate quitMakar]
