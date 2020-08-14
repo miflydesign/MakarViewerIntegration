@@ -66,6 +66,12 @@ Script
     return YES;
 }
 ```
+- Implement `MakarViewerDelegate` to receive MakarViewer status
+```
+-(void)makarDidLoad;
+-(void)makarDidUnload;
+-(void)makarDidQuit;
+```
 - Active MakarViewer and load project
 ```
 [[MakarViewerManager shared] showProjectWithProjectId:PROJECT_ID type: AR];
@@ -73,12 +79,6 @@ Script
 - Active MakarViewer and display user page
 ```
 [[MakarViewerManager shared] showUserWith:USER_ACCOUNT];
-```
-- Implement `MakarViewerDelegate` to receive MakarViewer status
-```
--(void)makarDidLoad;
--(void)makarDidUnload;
--(void)makarDidQuit;
 ```
 - Unload MakarViewe will release most of the memory it occupies, but not all of it. You will be able to run MakarViewer again.
 ```
