@@ -13,7 +13,7 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer Project [MakarViewer](https://github.com/Unity-Technologies/uaal-example). 
+- Download Makar Viewer Project [MakarViewer](https://makar.app/makarview_embed.zip). 
 - Clone or Download GitHub repo [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git).
 - Create new foler named "Example", extract MakarViewer.zip in it and move NativeObjc Folder at same level.
 	<br><img src="images/ios/folderStructure.png">
