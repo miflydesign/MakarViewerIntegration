@@ -66,11 +66,11 @@ Script
     return YES;
 }
 ```
-- Open MakarViewer and enter project
+- Active MakarViewer and load project
 ```
 [[MakarViewerManager shared] showProjectWithProjectId:PROJECT_ID type: AR];
 ```
-- Open MakarViewer and show user page
+- Active MakarViewer and display user page
 ```
 [[MakarViewerManager shared] showUserWith:USER_ACCOUNT];
 ```
