@@ -89,7 +89,7 @@ Script
 ```
 
 - Unload MakarViewer completely will release all memory.<br>
-//Note: You won’t be able to run MakarViewer again in the same process after this call. You can set quitHandler on AppController to override the default process kill.
+Note: You won’t be able to run MakarViewer again in the same process after this call. You can set quitHandler on AppController to override the default process kill.
 ```
 [[MakarViewerManager shared] quit];
 ```
