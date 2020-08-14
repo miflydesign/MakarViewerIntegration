@@ -98,7 +98,7 @@ Script
 ```
 [[MakarViewerManager shared] quit];
 ```
-You can read more in `AppDelegate.mm` and `ViewController.m`
+Learn more in `AppDelegate.mm` and `ViewController.m`
 
 ## Workspace is ready
 Everything is ready to build, run and debug for both projects: Unity-iPhone and NativeObjc (select NativeObjc scheme to run Native App with integrated Unity or Unity-iPhone to run just Unity App part)
