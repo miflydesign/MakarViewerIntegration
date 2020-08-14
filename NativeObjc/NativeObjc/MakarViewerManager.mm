@@ -53,7 +53,7 @@ UnityFramework* UnityFrameworkLoad()
 
 - (void)showUserWith:(NSString*)account
 {
-    const char* param = [account UTF8String];
+    NSString * param = account;
     const char* funcName = [@"ShowUser" UTF8String];
     
     if(![self isInitialized]) {
@@ -61,14 +61,15 @@ UnityFramework* UnityFrameworkLoad()
         __weak typeof(self) weakSelf = self;
         self.InitializedCallback = ^(void)
         {
-            [weakSelf callMakarWithFuncName:funcName andMessage:param];
+            [weakSelf callMakarWithFuncName:funcName andMessage:[param UTF8String]];
         };
         [self initialize];
         
     }else{
         [self show];
-        [self callMakarWithFuncName:funcName andMessage:param];
+        [self callMakarWithFuncName:funcName andMessage:[param UTF8String]];
     }
+
 }
 
 - (void)showProjectWithProjectId:(NSString*)proId type:(MakarProjectType)projType
