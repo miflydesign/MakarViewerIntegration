@@ -53,39 +53,52 @@ Privacy - Location Always Usage Description
 Script
 --------------
 - Set valid `makarApiKey` value in AppDelegate.mm
-- Add `MakarViewerManager.h"` into AppDelegate.mm.
-- Initialize MakarViewerManager in didFinishLaunchingWithOptions.
+- Initialize MakarViewer
 ```
-[[MakarViewerManager shared] initializedWithKey:makarApiKey
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [[MakarViewerManager shared] initializedWithKey:makarApiKey
                                              window:self.window
                                       appLaunchOpts:launchOptions
                                               gArgc:gArgc
                                               gArgv:gArgv];
+    
+    return YES;
+}
 ```
-- Initialize MakarViewer and enter project. type must be "ar", "ar_slam", "vr"
+- Open MakarViewer and enter project
 ```
-[self.delegate showProjectWidth:@"PROJECT_ID" type:@"PROJECT_TYPE"];
+[[MakarViewerManager shared] showProjectWithProjectId:PROJECT_ID type: AR];
 ```
-- Unload MakarViewer and receive a callback to UnityFrameworkListener after the unload completes. MakarViewer will release most of the memory it occupies, but not all of it. You will be able to run MakarViewer again.
+- Open MakarViewer and show user page
 ```
-[self.delegate unloadMakar]
+[[MakarViewerManager shared] showUserWith:USER_ACCOUNT];
+```
+- Implement `MakarViewerDelegate` to receive MakarViewer status
+```
+-(void)makarDidLoad;
+-(void)makarDidUnload;
+-(void)makarDidQuit;
+```
+- Unload MakarViewe will release most of the memory it occupies, but not all of it. You will be able to run MakarViewer again.
+```
+[[MakarViewerManager shared] unload];
 ```
 - Pause MakarViewer.
 ```
-[self.delegate pauseMakar]
-[self.delegate resumeMakar]
+[[MakarViewerManager shared] setPause:YES];
 ```
-
 - Call this method while a non-MakarViewer View is showing to also show a MakarViewer that’s already running.
 ```
-[self.delegate showMakar]
+[[MakarViewerManager shared] show];
 ```
 
-- Unload MakarViewer completely and receive a callback to UnityFrameworkListener when MakarViewer quits. MakarViewer will release all memory.<br>
+- Unload MakarViewer completely will release all memory.<br>
 //Note: You won’t be able to run MakarViewer again in the same process after this call. You can set quitHandler on AppController to override the default process kill.
 ```
-[self.delegate quitMakar]
+[[MakarViewerManager shared] quit];
 ```
+You can read more in `AppDelegate.mm` and `ViewController.m`
 
 ## Workspace is ready
 Everything is ready to build, run and debug for both projects: Unity-iPhone and NativeObjc (select NativeObjc scheme to run Native App with integrated Unity or Unity-iPhone to run just Unity App part)
