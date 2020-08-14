@@ -53,18 +53,13 @@ Privacy - Location Always Usage Description
 Script
 --------------
 - Set valid `makarApiKey` value in AppDelegate.mm
-- Initialize MakarViewer
+- Initialize MakarViewer in `application didFinishLaunchingWithOptions`
 ```
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    [[MakarViewerManager shared] initializedWithKey:makarApiKey
-                                             window:self.window
-                                      appLaunchOpts:launchOptions
-                                              gArgc:gArgc
-                                              gArgv:gArgv];
-    
-    return YES;
-}
+[[MakarViewerManager shared] initializedWithKey:makarApiKey
+                                         window:self.window
+                                  appLaunchOpts:launchOptions
+                                          gArgc:gArgc
+                                          gArgv:gArgv];   
 ```
 - Implement `MakarViewerDelegate` to receive MakarViewer status
 ```
