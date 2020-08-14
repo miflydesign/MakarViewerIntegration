@@ -53,11 +53,14 @@ Privacy - Location Always Usage Description
 Script
 --------------
 - Set valid `makarApiKey` value in AppDelegate.mm
-- Add `#import "AppDelegate.h"` into your ViewController.m.
-- Add `@property (strong, nonatomic) AppDelegate *delegate;"` into your ViewController.m.
-- Initialize MakarViewer and show user page.
+- Add `MakarViewerManager.h"` into AppDelegate.mm.
+- Initialize MakarViewerManager in didFinishLaunchingWithOptions.
 ```
-[self.delegate showUserWith:@"USER_ACCOUNT"];
+[[MakarViewerManager shared] initializedWithKey:makarApiKey
+                                             window:self.window
+                                      appLaunchOpts:launchOptions
+                                              gArgc:gArgc
+                                              gArgv:gArgv];
 ```
 - Initialize MakarViewer and enter project. type must be "ar", "ar_slam", "vr"
 ```
