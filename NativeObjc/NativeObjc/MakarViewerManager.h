@@ -9,11 +9,11 @@
 #include <UnityFramework/UnityFramework.h>
 #include <UnityFramework/NativeCallProxy.h>
 
-typedef enum {
+typedef NS_ENUM(NSInteger, MakarProjectType) {
     AR = 0,
     AR_SLAM,
     VR
-} MakarProjectType;
+};
 
 typedef void (^Action)(void);
 
