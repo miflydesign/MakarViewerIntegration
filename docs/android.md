@@ -59,7 +59,7 @@ Set AndroidManifest
 Script
 --------------
 
-- Start PermissionActivity check MAKAR need permission.
+- Start PermissionActivity check MAKAR need Permission.
 ```
 Intent intent = new Intent();
         intent.setClass(this,org.mifly.makar.unity.PermissionActivity.class);
@@ -68,17 +68,17 @@ Intent intent = new Intent();
         startActivity(intent);
 ```
 
-- Set back activity
+- Set back activity add CLASS_NAME_ANTHOR_PROJECT_NATIVE value
 ```
 intent.putExtra("CLASS_NAME_ANTHOR_PROJECT_NATIVE","");
 ```
 
-- If want to load project
+- load project nedd add projectId、projectType value
 ```
 intent.putExtra("projectId","");
 intent.putExtra("projectType","");
 ```
-- If want to display user page
+- display user page nedd add userId value
 ```
 intent.putExtra("userId","");
 ```
