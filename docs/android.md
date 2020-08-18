@@ -8,8 +8,7 @@ Pre-requisites
 
 Requirements
 --------------
-- Android Studio 3.4.2+
-- Unity version 2019.3.0b4+
+- Android Studio 3.5.3+
 
 Getting Started
 --------------
@@ -63,24 +62,24 @@ Script
 ```
 Intent intent = new Intent();
         intent.setClass(this,org.mifly.makar.unity.PermissionActivity.class);
-        intent.putExtra("makarApiKey","");
+        intent.putExtra("makarApiKey","MAKAR_API_KEY");
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
 ```
 
 - Set back activity add CLASS_NAME_ANTHOR_PROJECT_NATIVE value
 ```
-intent.putExtra("CLASS_NAME_ANTHOR_PROJECT_NATIVE","");
+intent.putExtra("CLASS_NAME_ANTHOR_PROJECT_NATIVE","com.example.nativeandroidapp.MainActivity");
 ```
 
 - load project nedd add projectId、projectType value
 ```
-intent.putExtra("projectId","");
-intent.putExtra("projectType","");
+intent.putExtra("projectId","PROJECT_ID");
+intent.putExtra("projectType","AR");
 ```
 - display user page nedd add userId value
 ```
-intent.putExtra("userId","");
+intent.putExtra("userId","USER_ACCOUNT");
 ```
 
 ## Workspace is ready
