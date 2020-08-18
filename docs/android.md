@@ -86,7 +86,7 @@ intent.putExtra("userId","");
 ## Workspace is ready
 
 Everything is ready to build, run and debug:
-<br><img src="images/ios/selectTargetToBuild.png">
+<br><img src="images/android/selectTargetToBuild.png">
 
 If all went successfully at this point you should be able to run NativeAndroidApp.
 
