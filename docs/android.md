@@ -58,13 +58,13 @@ Set AndroidManifest
 Script
 --------------
 
-- Start PermissionActivity check MAKAR need Permission.
+- Start Makar Viewer with PermissionActivity
 ```
 Intent intent = new Intent();
-        intent.setClass(this,org.mifly.makar.unity.PermissionActivity.class);
-        intent.putExtra("makarApiKey","MAKAR_API_KEY");
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
+intent.setClass(this,org.mifly.makar.unity.PermissionActivity.class);
+intent.putExtra("makarApiKey",MAKAR_API_KEY);
+intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_CLEAR_TOP);
+startActivity(intent);
 ```
 
 - Set back activity add CLASS_NAME_ANTHOR_PROJECT_NATIVE value
@@ -72,17 +72,18 @@ Intent intent = new Intent();
 intent.putExtra("CLASS_NAME_ANTHOR_PROJECT_NATIVE","com.example.nativeandroidapp.MainActivity");
 ```
 
-- load project nedd add projectId、projectType value
+- Load project with projectId and projectType
 ```
-intent.putExtra("projectId","PROJECT_ID");
+intent.putExtra("projectId",PROJECT_ID);
 intent.putExtra("projectType","AR");
 ```
-- display user page nedd add userId value
+- Show user page
 ```
-intent.putExtra("userId","USER_ACCOUNT");
+intent.putExtra("userId",USER_ACCOUNT);
 ```
 
-## Workspace is ready
+
+## Everything is ready
 
 Everything is ready to build, run and debug:
 <br><img src="images/android/selectTargetToBuild.png">
