@@ -66,19 +66,19 @@ MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
 - Set Makar api key
   - InitializedWithKey(String)
 ```
-makarViewerManager.InitializedWithKey("MAKAR_API_KEY");
+makarViewerManager.InitializedWithKey(MAKAR_API_KEY);
 ```
 
 - load project
   - ShowProjectWithProjectId(String, Enum, Context)
 ```
-makarViewerManager.ShowProjectWithProjectId("PROJECT_ID", AR, getApplicationContext());
+makarViewerManager.ShowProjectWithProjectId(PROJECT_ID, AR, getApplicationContext());
 ```
 
 - Show user page
   - ShowUserWith(String, Context)
 ```
-makarViewerManager.ShowUserWith( "USER_ID", getApplicationContext());
+makarViewerManager.ShowUserWith(USER_ID, getApplicationContext());
 ```
 
 - Unload MakarViewe will release most of the memory it occupies, but not all of it. You will be able to run MakarViewer again.
@@ -87,6 +87,7 @@ makarViewerManager.Unload();
 ```
 
 - Unload MakarViewer completely will release all memory.
+Note: You won’t be able to run MakarViewer again in the same process after this call. 
 ```
 makarViewerManager.Quit();
 ```
