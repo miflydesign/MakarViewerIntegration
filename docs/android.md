@@ -64,19 +64,19 @@ MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
 ```
 
 - Set Makar api key
- - initializedWithKey(String)
+  - initializedWithKey(String)
 ```
 makarViewerManager.initializedWithKey("MAKAR_API_KEY");
 ```
 
 - load project
- - showProjectWithProjectId(String, Enum, Context)
+  - showProjectWithProjectId(String, Enum, Context)
 ```
 makarViewerManager.showProjectWithProjectId("PROJECT_ID", AR, getApplicationContext());
 ```
 
 - Show user page
- - showUserWith(String, Context)
+  - showUserWith(String, Context)
 ```
 makarViewerManager.showUserWith( "USER_ID", getApplicationContext());
 ```
