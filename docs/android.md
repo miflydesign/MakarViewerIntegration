@@ -58,30 +58,38 @@ Set AndroidManifest
 Script
 --------------
 
-- Start Makar Viewer with PermissionActivity
+- Get MakarViewerManager
 ```
-Intent intent = new Intent();
-intent.setClass(this,org.mifly.makar.unity.PermissionActivity.class);
-intent.putExtra("makarApiKey",MAKAR_API_KEY);
-intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_CLEAR_TOP);
-startActivity(intent);
+MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
 ```
 
-- Set back activity add CLASS_NAME_ANTHOR_PROJECT_NATIVE value
+- Set Makar api key
+ - initializedWithKey(String)
 ```
-intent.putExtra("CLASS_NAME_ANTHOR_PROJECT_NATIVE","com.example.nativeandroidapp.MainActivity");
+makarViewerManager.initializedWithKey("MAKAR_API_KEY");
 ```
 
-- Load project with projectId and projectType
+- load project
+ - showProjectWithProjectId(String, Enum, Context)
 ```
-intent.putExtra("projectId",PROJECT_ID);
-intent.putExtra("projectType","AR");
+makarViewerManager.showProjectWithProjectId("PROJECT_ID", AR, getApplicationContext());
 ```
+
 - Show user page
+ - showUserWith(String, Context)
 ```
-intent.putExtra("userId",USER_ACCOUNT);
+makarViewerManager.showUserWith( "USER_ID", getApplicationContext());
 ```
 
+- Unload MakarViewe will release most of the memory it occupies, but not all of it. You will be able to run MakarViewer again.
+```
+makarViewerManager.unload();
+```
+
+- Unload MakarViewer completely will release all memory.
+```
+makarViewerManager.quit();
+```
 
 ## Everything is ready
 
