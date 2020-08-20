@@ -79,14 +79,6 @@ Script
 ```
 [[MakarViewerManager shared] unload];
 ```
-- Pause MakarViewer.
-```
-[[MakarViewerManager shared] setPause:YES];
-```
-- Call this method while a non-MakarViewer View is showing to also show a MakarViewer that’s already running.
-```
-[[MakarViewerManager shared] show];
-```
 
 - Unload MakarViewer completely will release all memory.<br>
 Note: You won’t be able to run MakarViewer again in the same process after this call. You can set quitHandler on AppController to override the default process kill.

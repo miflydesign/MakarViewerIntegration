@@ -1,6 +1,6 @@
 # Makar Viewer as a Library integration example to iOS and Android #
 
-Makar Viewer is made with Unity, Unity as a library in native apps by integrating the Unity runtime components and content in a native platform project. The Unity Runtime Library exposes controls to manage when and how to load/activate/unload within the native application.
+Makar Viewer is made with Unity. The Unity Runtime Library exposes controls to manage when and how to load/activate/unload within the native application.
 
 
 **Limitations**
