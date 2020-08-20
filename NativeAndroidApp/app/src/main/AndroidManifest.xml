@@ -14,7 +14,13 @@
             </intent-filter>
         </activity>
 
-    </application>
+        <activity android:name="org.mifly.makar.unity.PermissionActivity"
+            android:exported="true"/>
 
+        <activity android:name="org.mifly.makar.unity.UnityARPlayerActivity"
+            android:exported="true"
+            android:launchMode="singleTask"/>
+
+    </application>
 
 </manifest>

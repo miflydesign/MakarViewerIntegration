@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import org.mifly.makar.unity.MakarViewerManager;
+
 public class MainActivity extends AppCompatActivity
 {
 
@@ -17,15 +19,31 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
 
-        Button showUnityBtn = findViewById(R.id.showUnityBtn);
-        showUnityBtn.setOnClickListener(new View.OnClickListener() {
+        Button showProjectBtn = findViewById(R.id.showProjectBtn);
+        showProjectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
-                // Ｗrite You code
+
+                MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
+                makarViewerManager.initializedWithKey("MAKAR_API_KEY");
+                makarViewerManager.showProjectWithProjectId("2e011aec1f0be6547f9069bfe05816ee", MakarViewerManager.ProjectType.ar, getApplicationContext());
             }
         });
 
+
+        Button showUserIdBtn = findViewById(R.id.showUserIdBtn);
+        showUserIdBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+
+                MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
+                makarViewerManager.initializedWithKey("MAKAR_API_KEY");
+                makarViewerManager.showUserWith( "makarvr", getApplicationContext());
+
+            }
+        });
     }
 
 }

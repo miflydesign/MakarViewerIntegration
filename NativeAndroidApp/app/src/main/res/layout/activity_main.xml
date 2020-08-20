@@ -7,14 +7,21 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/showUnityBtn"
+        android:id="@+id/showProjectBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="36dp"
-        android:text="Show Unity"
+        android:text="Show Project Unity"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/showUserIdBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Show UserId Unity"
+        app:layout_constraintStart_toEndOf="@+id/showProjectBtn"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
