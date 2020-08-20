@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity
             {
 
                 MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
-                makarViewerManager.initializedWithKey("MAKAR_API_KEY");
-                makarViewerManager.showProjectWithProjectId("2e011aec1f0be6547f9069bfe05816ee", MakarViewerManager.ProjectType.ar, getApplicationContext());
+                makarViewerManager.InitializedWithKey("MAKAR_API_KEY");
+                makarViewerManager.ShowProjectWithProjectId("2e011aec1f0be6547f9069bfe05816ee", MakarViewerManager.ProjectType.ar, getApplicationContext());
             }
         });
 
@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity
             {
 
                 MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
-                makarViewerManager.initializedWithKey("MAKAR_API_KEY");
-                makarViewerManager.showUserWith( "makarvr", getApplicationContext());
+                makarViewerManager.InitializedWithKey("MAKAR_API_KEY");
+                makarViewerManager.ShowUserWith( "makarvr", getApplicationContext());
 
             }
         });
