@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,20 +17,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="DXB-L5-psE">
-                                <rect key="frame" x="150.5" y="418" width="113" height="60"/>
+                                <rect key="frame" x="151" y="388" width="112" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blO-yq-LOx">
-                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
-                                        <state key="normal" title="Enter AR Project"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                        <state key="normal" title="Enter AR"/>
                                         <connections>
-                                            <action selector="btnEnterProjectTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EoD-vx-dj8"/>
+                                            <action selector="btnEnterAR:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qWq-bh-YWe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2C-vb-9LN">
+                                        <rect key="frame" x="0.0" y="30" width="94" height="30"/>
+                                        <state key="normal" title="Enter ARSlam"/>
+                                        <connections>
+                                            <action selector="btnEnterARSlam:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cQz-uc-9u9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVo-Ar-feH">
+                                        <rect key="frame" x="0.0" y="60" width="60" height="30"/>
+                                        <state key="normal" title="Enter VR"/>
+                                        <connections>
+                                            <action selector="btnEnterVr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tiB-09-OoB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9l-Kk-cD8">
-                                        <rect key="frame" x="0.0" y="30" width="112" height="30"/>
+                                        <rect key="frame" x="0.0" y="90" width="112" height="30"/>
                                         <state key="normal" title="Open User Page"/>
                                         <connections>
-                                            <action selector="btnOpenUserTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YAP-vt-iZn"/>
+                                            <action selector="btnOpenUserTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rat-5p-ltN"/>
                                         </connections>
                                     </button>
                                 </subviews>

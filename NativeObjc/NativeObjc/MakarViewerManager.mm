@@ -82,7 +82,7 @@ UnityFramework* UnityFrameworkLoad()
         __weak typeof(self) weakSelf = self;
         self.InitializedCallback = ^(void)
         {
-            [weakSelf callMakarWithFuncName:funcName andMessage:[param UTF8String]];
+            [weakSelf callMakarWithFuncName:funcName andMessage:[param UTF8String]];            
         };
         [self initialize];
         
@@ -94,7 +94,7 @@ UnityFramework* UnityFrameworkLoad()
 
 - (void)callMakarWithFuncName:(const char*)funcName andMessage:(const char*)msg
 {
-    [[self ufw] sendMessageToGOWithName: "ParamHelper" functionName: funcName message: msg];
+    [[self ufw] sendMessageToGOWithName: "NativeHelper" functionName: funcName message: msg];
 }
 
 -(NSString*)getProjectTypeValue:(MakarProjectType)type{

@@ -21,15 +21,27 @@
     [[MakarViewerManager shared] setDelegate:self];
 }
 
-- (IBAction)btnEnterProjectTap:(id)sender
+- (IBAction)btnEnterAR:(id)sender
 {
     NSString *projectId = @"2e011aec1f0be6547f9069bfe05816ee";
     [[MakarViewerManager shared] showProjectWithProjectId:projectId type: AR];
 }
 
+- (IBAction)btnEnterARSlam:(id)sender
+{
+    NSString *projectId = @"ca6e231b9bde8183dc8f208ab619055a";
+    [[MakarViewerManager shared] showProjectWithProjectId:projectId type: AR_SLAM];
+}
+
+- (IBAction)btnEnterVr:(id)sender
+{
+    NSString *projectId = @"fb0078361c107aae671a0b86923690a0";
+    [[MakarViewerManager shared] showProjectWithProjectId:projectId type: VR];
+}
+
 - (IBAction)btnOpenUserTap:(id)sender
 {
-    NSString *userAccount = @"miflyTest";
+    NSString *userAccount = @"Makarvr";
     [[MakarViewerManager shared] showUserWith:userAccount];
 }
 

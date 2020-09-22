@@ -15,20 +15,9 @@
 		5C3D3E3424E5853F0065CF17 /* MakarViewerManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C3D3E3324E5853F0065CF17 /* MakarViewerManager.mm */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		5C3D3E2124E51C670065CF17 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		5C0AC1202519CB6F000793D5 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0AC1232519D085000793D5 /* MakarViewerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = MakarViewerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3D3DF224E509DB0065CF17 /* NativeObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3D3DF524E509DB0065CF17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C3D3DF624E509DB0065CF17 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -90,6 +79,8 @@
 		5C3D3E0F24E511CC0065CF17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C0AC1232519D085000793D5 /* MakarViewerApp.app */,
+				5C0AC1202519CB6F000793D5 /* UnityFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,7 +95,6 @@
 				5C3D3DEE24E509DB0065CF17 /* Sources */,
 				5C3D3DEF24E509DB0065CF17 /* Frameworks */,
 				5C3D3DF024E509DB0065CF17 /* Resources */,
-				5C3D3E2124E51C670065CF17 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,6 +300,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X76N9BUQ59;
 				INFOPLIST_FILE = NativeObjc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X76N9BUQ59;
 				INFOPLIST_FILE = NativeObjc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
