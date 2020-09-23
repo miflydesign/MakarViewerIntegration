@@ -4,7 +4,7 @@ This document explains how to include Makar Viewer as a Library into standard iO
 
 Pre-requisites
 --------------
-- Get API key: Contact <infomarkar@miflydesign.com>
+- Get API key: Contact <infomakar@miflydesign.com>
 
 Requirements
 --------------
@@ -103,4 +103,4 @@ Copyright © MIND & IDEA FLY CO., LTD
 
 Contact
 -------
-<infomarkar@miflydesign.com>
+<infomakar@miflydesign.com>
