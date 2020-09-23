@@ -13,27 +13,15 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer Project [MakarViewer](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer3_1_4_ios_1600852391.zip). 
+- Download Makar Viewer Framework [Framework](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_1_4_ios_1600866545.zip). 
 - Clone or Download GitHub repo [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git).
-- Create new foler named "Example", extract MakarViewer.zip in it and move NativeObjc Folder at same level.
-	<br><img src="images/ios/folderStructure.png">
-	- NativeObjc - this is simple Xcode single view application where we want to integrate our makar viewer project. It has some UI and is prepared to load viewer.
-    - MakarViewer - this is a makar viewer project made with Unity which will be integrated to the standard iOS application.
 
-**2. Setup Xcode workspace**
-Xcode workspace allows to work on multiple projects simultaneously and combine their products
-- open NativeObjc.xcodeproj from Xcode
-- create workspace and save it at Example/both.xcworkspace. (File / New / Workspace)
-  <br><img src="images/ios/workspaceLocation.png">
-- close NativeObjc.xcodeproj project all Next steps are done from just created Workspace project
-- add NativeObjc.xcodeproj and Unity-iPhone.xcodeproj in MakarViewer folder to workspace on a same level ( File / Add Files to “both” )
-  <br><img src="images/ios/workspaceProjects.png">
-
-**3. Add UnityFramework.framework**
+**2. Add UnityFramework.framework**
 With this step we add Makar Viewer in the form of a framework to NativeObjc.
+- Put UnityFramework.framework we just download in your project.
 - select NativeObjc target from NativeObjc project
-- in "General" tab / "Frameworks, Libraries, and Embedded  Content" press +
-- Add Unity-iPhone/UnityFramework.framework
+- in "General" tab / "Frameworks, Libraries, and Embedded Content"
+- Set "UnityFramework.framework" Embed value is "Embed & Sign"
   <br><img src="images/ios/addToEmbeddedContent.png">
 - in "Build Phases" tab, expand "Link Binary With Libraries"
 - remove UnityFramework.framework from the list (select it and press - )
