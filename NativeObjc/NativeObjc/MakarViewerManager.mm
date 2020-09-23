@@ -105,6 +105,7 @@ UnityFramework* UnityFrameworkLoad()
 //MARK: - NativeCallsProtocol
 - (void)showHostMainWindow
 {
+    [self unload];
     [self.window makeKeyAndVisible];
 }
 
@@ -192,7 +193,6 @@ UnityFramework* UnityFrameworkLoad()
 {
     [[self ufw] unregisterFrameworkListener: self];
     [self setUfw: nil];
-    [self showHostMainWindow];
     
     [self.delegate makarDidUnload];
 }
@@ -202,7 +202,6 @@ UnityFramework* UnityFrameworkLoad()
     [[self ufw] unregisterFrameworkListener: self];
     [self setUfw: nil];
     [self setDidQuit:true];
-    [self showHostMainWindow];
     
     [self.delegate makarDidQuit];
 }
