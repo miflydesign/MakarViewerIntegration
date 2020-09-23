@@ -109,4 +109,4 @@ Copyright © MIND & IDEA FLY CO., LTD
 
 Contact
 -------
-<infomarkar@miflydesign.com>
+<infomakar@miflydesign.com>
