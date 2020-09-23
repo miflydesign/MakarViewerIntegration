@@ -4,7 +4,7 @@ This document explains how to include Makar Viewer as a Library into standard iO
 
 Pre-requisites
 --------------
-- Sign up and get API key from [Makar development](https://developer.makar.app). 
+- Get API key: Contact <infomarkar@miflydesign.com>
 
 Requirements
 --------------
@@ -13,7 +13,7 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer Project [MakarViewer](https://makar.app/makarview_embed.zip). 
+- Download Makar Viewer Project [MakarViewer](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer3_1_4_ios_1600849991.zip). 
 - Clone or Download GitHub repo [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git).
 - Create new foler named "Example", extract MakarViewer.zip in it and move NativeObjc Folder at same level.
 	<br><img src="images/ios/folderStructure.png">
