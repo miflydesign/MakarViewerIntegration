@@ -1,6 +1,6 @@
 ## Integrating Makar Viewer as a library into standard iOS app
 
-This document explains how to include Makar Viewer as a Library into standard iOS application. You can read more about [Unity as a Library](https://docs.unity3d.com/2019.3/Documentation/Manual/UnityasaLibrary.html).
+This document explains how to include Makar Viewer as a Library into standard iOS application.
 
 Pre-requisites
 --------------
@@ -13,7 +13,7 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer Framework [Framework](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_1_4_ios_1600866545.zip). 
+- Download Makar Viewer Framework [Download](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_1_4_ios_1600866545.zip). 
 - Clone or Download GitHub repo [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git).
 
 **2. Add UnityFramework.framework**
