@@ -75,11 +75,6 @@ Note: You won’t be able to run MakarViewer again in the same process after thi
 ```
 Learn more in `AppDelegate.mm` and `ViewController.m`
 
-## Workspace is ready
-Everything is ready to build, run and debug for both projects: Unity-iPhone and NativeObjc (select NativeObjc scheme to run Native App with integrated Unity or Unity-iPhone to run just Unity App part)
-<br><img src="images/ios/selectTargetToBuild.png">
-If all went successfully at this point you should be able to run NativeObjc.
-
 References
 -------
 - [Unity Documentation](https://docs.unity3d.com/Manual/UnityasaLibrary-iOS.html)
