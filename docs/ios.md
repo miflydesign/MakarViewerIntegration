@@ -13,7 +13,7 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer Project [MakarViewer](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer3_1_4_ios_1600849991.zip). 
+- Download Makar Viewer Project [MakarViewer](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer3_1_4_ios_1600852391.zip). 
 - Clone or Download GitHub repo [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git).
 - Create new foler named "Example", extract MakarViewer.zip in it and move NativeObjc Folder at same level.
 	<br><img src="images/ios/folderStructure.png">
