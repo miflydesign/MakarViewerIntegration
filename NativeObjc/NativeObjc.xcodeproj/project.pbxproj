@@ -12,7 +12,6 @@
 		5C3D3E0024E509DB0065CF17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3D3DFE24E509DB0065CF17 /* Main.storyboard */; };
 		5C3D3E0224E509E20065CF17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3D3E0124E509E20065CF17 /* Assets.xcassets */; };
 		5C3D3E0524E509E20065CF17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3D3E0324E509E20065CF17 /* LaunchScreen.storyboard */; };
-		5C3D3E3424E5853F0065CF17 /* MakarViewerManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C3D3E3324E5853F0065CF17 /* MakarViewerManager.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,8 +37,6 @@
 		5C3D3E0124E509E20065CF17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C3D3E0424E509E20065CF17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C3D3E0624E509E20065CF17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C3D3E3324E5853F0065CF17 /* MakarViewerManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MakarViewerManager.mm; sourceTree = "<group>"; };
-		5C3D3E3524E6392D0065CF17 /* MakarViewerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakarViewerManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +74,6 @@
 				5C3D3DF624E509DB0065CF17 /* AppDelegate.mm */,
 				5C3D3DFB24E509DB0065CF17 /* ViewController.h */,
 				5C3D3DFC24E509DB0065CF17 /* ViewController.m */,
-				5C3D3E3324E5853F0065CF17 /* MakarViewerManager.mm */,
-				5C3D3E3524E6392D0065CF17 /* MakarViewerManager.h */,
 				5C3D3DFE24E509DB0065CF17 /* Main.storyboard */,
 				5C3D3E0124E509E20065CF17 /* Assets.xcassets */,
 				5C3D3E0324E509E20065CF17 /* LaunchScreen.storyboard */,
@@ -165,7 +160,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C3D3E3424E5853F0065CF17 /* MakarViewerManager.mm in Sources */,
 				5C3D3DFD24E509DB0065CF17 /* ViewController.m in Sources */,
 				5C3D3DF724E509DB0065CF17 /* AppDelegate.mm in Sources */,
 			);

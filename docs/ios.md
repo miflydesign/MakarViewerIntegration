@@ -13,12 +13,12 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer Framework [Download](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_1_4_ios_1600866545.zip). 
+- Download Makar Viewer Framework and files [Download](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_1_4_ios_1600873703.zip). 
 - Clone or Download GitHub repo [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git).
 
 **2. Add UnityFramework.framework**
 With this step we add Makar Viewer in the form of a framework to NativeObjc.
-- Put UnityFramework.framework we just download in your project.
+- Put UnityFramework.framework and files we just download in your project.
 - select NativeObjc target from NativeObjc project
 - in "General" tab / "Frameworks, Libraries, and Embedded Content"
 - Set "UnityFramework.framework" Embed value is "Embed & Sign"
