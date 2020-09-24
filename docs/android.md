@@ -9,6 +9,7 @@ Pre-requisites
 Requirements
 --------------
 - Android Studio 3.5.3+
+- Android NDK r19 or newer required.
 
 Getting Started
 --------------
@@ -26,8 +27,8 @@ Getting Started
 - Open settings.gradle file
   - Add a new project pointing to MakarViewer module at the end of the file: 
   ```
-  include ':MakarViewer'
-  project(':MakarViewer').projectDir=new File('..\\MakarViewer')
+  include ':unityLibrary'
+  project(':unityLibrary').projectDir=new File('..\\MakarViewer\\unityLibrary')
   ```
   <img src="images/android/settingsGradle.png">
 - Open build.gradle(Module: app) file
