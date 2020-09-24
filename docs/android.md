@@ -14,7 +14,7 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer Project [MakarViewer](https://makar.app/makarview_embed.zip). 
+- Download Makar Viewer Project [MakarViewer](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_1_4_android_1600933158.zip). 
 - Clone or Download GitHub repo [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git).
 - Create new foler named "Example", extract MakarViewer.zip in it and move NativeAndroidApp Folder at same level.
   <br><img src="images/android/folderStructure.png">
