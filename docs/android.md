@@ -1,10 +1,10 @@
 ## Integrating Unity as a library into standard Android app
 
-This document explains how to include Unity as a Library into standard Android application through Activity. You can read more about [Unity as a Library](https://docs.unity3d.com/2019.3/Documentation/Manual/UnityasaLibrary.html).
+This document explains how to include Unity as a Library into standard Android application through Activity.
 
 Pre-requisites
 --------------
-- Sign up and get API key from [Makar development](https://developer.makar.app). 
+- Get API key: Contact <infomakar@miflydesign.com> 
 
 Requirements
 --------------
@@ -80,17 +80,6 @@ makarViewerManager.ShowProjectWithProjectId(PROJECT_ID, AR, getApplicationContex
   - ShowUserWith(String, Context)
 ```
 makarViewerManager.ShowUserWith(USER_ID, getApplicationContext());
-```
-
-- Unload MakarViewe will release most of the memory it occupies, but not all of it. You will be able to run MakarViewer again.
-```
-makarViewerManager.Unload();
-```
-
-- Unload MakarViewer completely will release all memory.
-Note: You won’t be able to run MakarViewer again in the same process after this call. 
-```
-makarViewerManager.Quit();
 ```
 
 ## Everything is ready
