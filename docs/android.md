@@ -9,47 +9,32 @@ Pre-requisites
 Requirements
 --------------
 - Android Studio 3.5.3+
-- Android NDK r19 or newer required.
 
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer Project [MakarViewer](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_1_4_android_1600933158.zip). 
+- Download Makar Viewer aar [MakarViewer](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_1_4_android_1601025218.zip). 
 - Clone or Download GitHub repo [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git).
-- Create new foler named "Example", extract MakarViewer.zip in it and move NativeAndroidApp Folder at same level.
-  <br><img src="images/android/folderStructure.png">
-  - NativeAndroidApp - this is simple Android application where we want to integrate our makar viewer project. It has some UI and is prepared to load viewer.
-    - MakarViewer - this is a makar viewer project made with Unity which will be integrated to the standard Android application.
 
 **2. Add Unity Library module to NativeAndroidApp**
-<br>Do the following to add the exported MakarViewer module to the NativeAndroidApp Gradle project in Android Studio:
-- Open NativeAndroidApp in Android Studio
-- Open settings.gradle file
-  - Add a new project pointing to MakarViewer module at the end of the file: 
-  ```
-  include ':unityLibrary'
-  project(':unityLibrary').projectDir=new File('..\\MakarViewer\\unityLibrary')
-  ```
-  <img src="images/android/settingsGradle.png">
-- Open build.gradle(Module: app) file
-  - Add the following in dependencies{ block
-  ```
-  implementation project(':MakarViewer')
-  implementation fileTree(dir: project(':MakarViewer').getProjectDir().toString() + ('\\libs'), include: ['*.jar'])
-  ```
-  <img src="images/android/buildGradleApp.png">
+- Put aar file in libs folder
+  <br><img src="images/android/putAarInLibs.png">
+
 - Open build.gradle(Project: NativeAndroidApp) file
-  - Add the following in allprojects{repositories{ block
   ```
-  flatDir {
-    dirs "${project(':MakarViewer').projectDir}/libs"
-  }
+    flatDir {
+      dirs 'libs'
+    }
   ```
   <img src="images/android/buildGradleNativeApp.png">
+- Open build.gradle(Module: app) file
+  ```
+  implementation(name:'MakarViewer', ext:'aar')
+  ```
+  <img src="images/android/buildGradleApp.png">
+
 - Click Sync Now to do a project sync since Gradle files have been modified
   <img src="images/android/syncGradle.png">
-- If everything succeeds, you should see MakarViewer module added in Android view
-  <img src="images/android/unityLibraryModule.png">
 
 Set AndroidManifest
 --------------
