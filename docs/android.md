@@ -13,7 +13,7 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer aar [MakarViewer](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_1_4_android_1602152646.zip). 
+- Download Makar Viewer aar [MakarViewer](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_1_4_android_1602497260.zip). 
 - Clone or Download GitHub repo [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git).
 
 **2. Add Unity Library module to NativeAndroidApp**
