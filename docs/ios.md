@@ -13,7 +13,7 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer Framework and files. [Download](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_1_4_ios_1602844962.zip) 
+- Download Makar Viewer Framework and files. [Download](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_2_0_ios_1605954739.zip) 
 - Clone or Download GitHub repo. [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git)
 - Download and Print AR Marker Image. [Sample Marker Image](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/ARSamplePoster.png)
 
@@ -69,7 +69,7 @@ Script
 [[MakarViewerManager shared] unload];
 ```
 
-- Unload MakarViewer completely will release all memory.<br>
+- Quit MakarViewer completely will release all memory.<br>
 Note: You won’t be able to run MakarViewer again in the same process after this call. You can set quitHandler on AppController to override the default process kill.
 ```
 [[MakarViewerManager shared] quit];
