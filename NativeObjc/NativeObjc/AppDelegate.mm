@@ -10,7 +10,7 @@
 #import "MakarViewerManager.h"
 
 //MARK: - Makar API KEY
-NSString* makarApiKey = @"00000000-0000-0000-0000-000000000000";
+NSString* makarApiKey = @"64bac6aa-1bf0-476c-8a5d-fbd44ac0af4a";
 //MARK: - Helper Variable
 int gArgc = 0;
 char** gArgv = nullptr;
