@@ -35,7 +35,7 @@
 
 - (IBAction)btnEnterVr:(id)sender
 {
-    NSString *projectId = @"fb0078361c107aae671a0b86923690a0";
+    NSString *projectId = @"52703099ec9adea8e12a8016b16b75e5";
     [[MakarViewerManager shared] showProjectWithProjectId:projectId type: VR];
 }
 
