@@ -7,21 +7,36 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/showProjectBtn"
+        android:id="@+id/showARProjectBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Show Project Unity"
+        android:text="Show AR Project Unity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/showARSlamProjectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show AR Slam Project Unity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showARProjectBtn" />
+
+    <Button
+        android:id="@+id/showVRProjectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show VR Project Unity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showARSlamProjectBtn" />
 
     <Button
         android:id="@+id/showUserIdBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="Show UserId Unity"
-        app:layout_constraintStart_toEndOf="@+id/showProjectBtn"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showVRProjectBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
