@@ -4,7 +4,7 @@ This document explains how to include Makar Viewer as a Library into standard iO
 
 Pre-requisites
 --------------
-- Get API key: Contact <infomakar@miflydesign.com>
+- (Option) Get Pro API key: If you want to remove watermark, Contact <infomakar@miflydesign.com>
 
 Requirements
 --------------
@@ -13,7 +13,7 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer Framework and files. [Download](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_2_0_ios_1606294587.zip) 
+- Download Makar Viewer Framework and files. [Download](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/MakarViewer_3_2_0_ios_1606895270.zip) 
 - Clone or Download GitHub repo. [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git)
 - Download and Print AR Marker Image. [Sample Marker Image](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/ARSamplePoster.png)
 

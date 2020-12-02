@@ -4,7 +4,7 @@ This document explains how to include Unity as a Library into standard Android a
 
 Pre-requisites
 --------------
-- Get API key: Contact <infomakar@miflydesign.com> 
+- (Option) Get Pro API key: If you want to remove watermark, Contact <infomakar@miflydesign.com>
 
 Requirements
 --------------
