@@ -15,5 +15,5 @@ Makar Viewer is made with Unity. The Unity Runtime Library exposes controls to m
  A library part (iOS framework and Android Archive (AAR) file) that includes all source & plugins 
  A thin launcher part that includes app representation data and runs library
 
-Step by step explanations on how to include the [iOS](docs/ios.md) / [Android](docs/android.md) library part into your native application when needed.
+Step by step explanations on how to include the [iOS-swift](docs/ios-swift.md), [iOS-objc](docs/ios.md) / [Android](docs/android.md) library part into your native application when needed.
 

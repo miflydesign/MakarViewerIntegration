@@ -18,16 +18,18 @@ Getting Started
 - Download and Print AR Marker Image. [Sample Marker Image](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/ARSamplePoster.png)
 
 **2. Add UnityFramework.framework**
-With this step we add Makar Viewer in the form of a framework to NativeObjc.
+With this step we add Makar Viewer in the form of a framework to NativeSwift.
 - Put UnityFramework.framework and files we just download in your project.
-- select NativeObjc target from NativeObjc project
+- Xcode auto create Bridging Header file.
+<br><img src="images/ios-swift/createBridgingHeader.png">
+- select NativeSwift target from NativeSwift project
 - in "General" tab / "Frameworks, Libraries, and Embedded Content"
 - Set "UnityFramework.framework" Embed value is "Embed & Sign"
-  <br><img src="images/ios/addToEmbeddedContent.png">
+  <br><img src="images/ios-swift/addToEmbeddedContent.png">
 - in "Build Settings" tab, set "Enable Bitcode" to "No"
 - in "Build Phases" tab, expand "Link Binary With Libraries"
 - remove UnityFramework.framework from the list (select it and press - )
-  <br><img src="images/ios/removeLink.png">
+  <br><img src="images/ios-swift/removeLink.png">
 
 **4. Setup Privacy**
 - Add the following service setup to `info.plist` file
@@ -42,41 +44,41 @@ Privacy - Location Always Usage Description
 
 Script
 --------------
-- Set valid `makarApiKey` value in AppDelegate.mm
+- Set valid `makarApiKey` value in AppDelegate.swift
 - Initialize MakarViewer in `application didFinishLaunchingWithOptions`
 ```
-[[MakarViewerManager shared] initializedWithKey:makarApiKey
-                                         window:self.window
-                                  appLaunchOpts:launchOptions
-                                          gArgc:gArgc
-                                          gArgv:gArgv];   
+MakarViewerManager.shared().initialized(withKey: MAKAR_API_KEY,
+                                        window: self.window,
+                                        appLaunchOpts: [:],
+                                        gArgc: CommandLine.argc,
+                                        gArgv: CommandLine.unsafeArgv)
 ```
 - Implement `MakarViewerDelegate` to receive MakarViewer status
 ```
--(void)makarDidLoad;
--(void)makarDidUnload;
--(void)makarDidQuit;
--(void)makarRequestUserInfoPage:(NSString*) userId;
+func makarDidLoad() 
+func makarDidUnload()
+func makarDidQuit()
+func makarRequestUserInfoPage()-> String
 ```
 - Active MakarViewer and load project
 ```
-[[MakarViewerManager shared] showProjectWithProjectId:PROJECT_ID type: AR];
+MakarViewerManager.shared()?.showProject(withProjectId: PROJECT_ID, type: .AR)
 ```
 - Active MakarViewer and display user page
 ```
-[[MakarViewerManager shared] showUserWith:USER_ACCOUNT];
+MakarViewerManager.shared()?.showUser(with: USER_ACCOUNT)
 ```
 - Unload MakarViewe will release most of the memory it occupies, but not all of it. You will be able to run MakarViewer again.
 ```
-[[MakarViewerManager shared] unload];
+MakarViewerManager.shared()?.unload()
 ```
 
 - Quit MakarViewer completely will release all memory.<br>
 Note: You won’t be able to run MakarViewer again in the same process after this call. You can set quitHandler on AppController to override the default process kill.
 ```
-[[MakarViewerManager shared] quit];
+MakarViewerManager.shared()?.didQuit
 ```
-Learn more in `AppDelegate.mm` and `ViewController.m`
+Learn more in `AppDelegate.swift` and `ViewController.swift`
 
 References
 -------
