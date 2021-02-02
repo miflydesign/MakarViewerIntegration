@@ -22,6 +22,10 @@ With this step we add Makar Viewer in the form of a framework to NativeSwift.
 - Put UnityFramework.framework and files we just download in your project.
 - Xcode auto create Bridging Header file.
 <br><img src="images/ios-Swift/createBridgingHeader.png">
+- Add following code in Bridging Header file.
+```
+#import "MakarViewerManager.h"
+```
 - select NativeSwift target from NativeSwift project
 - in "General" tab / "Frameworks, Libraries, and Embedded Content"
 - Set "UnityFramework.framework" Embed value is "Embed & Sign"
