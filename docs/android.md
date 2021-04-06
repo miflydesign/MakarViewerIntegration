@@ -75,6 +75,14 @@ Everything is ready to build, run and debug:
 
 If all went successfully at this point you should be able to run NativeAndroidApp.
 
+(Option) Get Your Project ID
+-------
+- You can play your project on device.
+- In the [Makar-Editor](https://www.makerar.com/en/download), Click "Settings" from project options.
+  <br><img src="images/getProjectIdStep1.png">
+- Project ID is at the Top-Right corner, select and copy the ID, paste it in your code.
+  <br><img src="images/getProjectIdStep2.png">
+
 References
 -------
 - [Integrating Unity as a library into standard Android app](https://github.com/Unity-Technologies/uaal-example)

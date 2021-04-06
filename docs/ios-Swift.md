@@ -84,6 +84,14 @@ MakarViewerManager.shared()?.didQuit
 ```
 Learn more in `AppDelegate.swift` and `ViewController.swift`
 
+(Option) Get Your Project ID
+-------
+- You can play your project on device.
+- In the [Makar-Editor](https://www.makerar.com/en/download), Click "Settings" from project options.
+  <br><img src="images/getProjectIdStep1.png">
+- Project ID is at the Top-Right corner, select and copy the ID, paste it in your code.
+  <br><img src="images/getProjectIdStep2.png">
+
 References
 -------
 - [Unity Documentation](https://docs.unity3d.com/Manual/UnityasaLibrary-iOS.html)
