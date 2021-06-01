@@ -88,8 +88,8 @@ Learn more in `AppDelegate.mm` and `ViewController.m`
 
 Troubleshooting
 -------
-- If your app crashing like "validateMTLScissorRect...", that's Apple's Metal issue, just disable Metal API Validation.
- In Xcode 12: Scheme > Edit Scheme... > Run > Diagnostics > Metal API Validation
+- If your app crashing like "validateMTLScissorRect...", that's Apple's Metal issue, just disable Metal API Validation.\
+ In Xcode 12: Scheme > Edit Scheme... > Run > Diagnostics > Metal API Validation\
  In Xcode 11 and below: Scheme > Edit Scheme... > Run > Options > Metal API Validation
 
 References
