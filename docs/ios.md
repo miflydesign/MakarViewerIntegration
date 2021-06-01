@@ -86,6 +86,12 @@ Learn more in `AppDelegate.mm` and `ViewController.m`
 - Project ID is at the Top-Right corner, select and copy the ID, paste it in your code.
   <br><img src="images/getProjectIdStep2.png">
 
+Troubleshooting
+-------
+- If your app crashing like "validateMTLScissorRect...", that's Apple's Metal issue, just disable Metal API Validation.
+ In Xcode 12: Scheme > Edit Scheme... > Run > Diagnostics > Metal API Validation
+ In Xcode 11 and below: Scheme > Edit Scheme... > Run > Options > Metal API Validation
+
 References
 -------
 - [Unity Documentation](https://docs.unity3d.com/Manual/UnityasaLibrary-iOS.html)
