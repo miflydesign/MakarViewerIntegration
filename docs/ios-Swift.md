@@ -80,7 +80,7 @@ MakarViewerManager.shared()?.unload()
 - Quit MakarViewer completely will release all memory.<br>
 Note: You won’t be able to run MakarViewer again in the same process after this call. You can set quitHandler on AppController to override the default process kill.
 ```
-MakarViewerManager.shared()?.didQuit
+MakarViewerManager.shared()?.didQuit()
 ```
 Learn more in `AppDelegate.swift` and `ViewController.swift`
 
