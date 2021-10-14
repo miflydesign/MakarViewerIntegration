@@ -9,6 +9,7 @@ Pre-requisites
 Requirements
 --------------
 - Android Studio 3.5.3+
+- Gradle 3.6.0+
 
 Getting Started
 --------------
