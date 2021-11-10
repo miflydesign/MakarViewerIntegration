@@ -12,6 +12,9 @@
 		5C3E45C525C8E77D005B360F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3E45C325C8E77D005B360F /* Main.storyboard */; };
 		5C3E45C725C8E780005B360F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3E45C625C8E780005B360F /* Assets.xcassets */; };
 		5C3E45CA25C8E780005B360F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3E45C825C8E780005B360F /* LaunchScreen.storyboard */; };
+		5CA0EC2B2735505C0049DC51 /* MakarViewerManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0EC2A2735505C0049DC51 /* MakarViewerManager.mm */; };
+		5CE4DAE9273B71B600D62EDE /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE4DAE5273B70B600D62EDE /* UnityFramework.framework */; };
+		5CE4DAEA273B71B600D62EDE /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE4DAE5273B70B600D62EDE /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -21,6 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				5CE4DAEA273B71B600D62EDE /* UnityFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,6 +40,9 @@
 		5C3E45C925C8E780005B360F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C3E45CB25C8E780005B360F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C3E45D925C8EABB005B360F /* NativeSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		5CA0EC292735505C0049DC51 /* MakarViewerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakarViewerManager.h; sourceTree = "<group>"; };
+		5CA0EC2A2735505C0049DC51 /* MakarViewerManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MakarViewerManager.mm; sourceTree = "<group>"; };
+		5CE4DAE5273B70B600D62EDE /* UnityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE4DAE9273B71B600D62EDE /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +77,9 @@
 		5C3E45BC25C8E77D005B360F /* NativeSwift */ = {
 			isa = PBXGroup;
 			children = (
+				5CE4DAE5273B70B600D62EDE /* UnityFramework.framework */,
+				5CA0EC292735505C0049DC51 /* MakarViewerManager.h */,
+				5CA0EC2A2735505C0049DC51 /* MakarViewerManager.mm */,
 				5C3E45BD25C8E77D005B360F /* AppDelegate.swift */,
 				5C3E45C125C8E77D005B360F /* ViewController.swift */,
 				5C3E45C325C8E77D005B360F /* Main.storyboard */,
@@ -160,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C3E45C225C8E77D005B360F /* ViewController.swift in Sources */,
+				5CA0EC2B2735505C0049DC51 /* MakarViewerManager.mm in Sources */,
 				5C3E45BE25C8E77D005B360F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -39,6 +39,10 @@ class ViewController: UIViewController {
         let userAccount = "Makarvr"
         MakarViewerManager.shared()?.showUser(with: userAccount)
     }
+    
+    func setOrientation(_ orientation: UIInterfaceOrientationMask){
+        AppDelegate.AppUtility.lockOrientation(orientation, andRotateTo: UIInterfaceOrientation.portrait)
+    }
 
 }
 
@@ -59,6 +63,13 @@ extension ViewController: MakarViewerDelegate{
     func makarRequestUserInfoPage(_ userId: String!) {
         //TODO
     }
+    
+    func makarRequestOrientation(_ orientation: String!) {
+        //Makar project require device orientation
+        let targetOrientation = orientation == "portrait" ? UIInterfaceOrientationMask.portrait: UIInterfaceOrientationMask.landscape
+        setOrientation(targetOrientation)
+    }
+
 
 }
 
