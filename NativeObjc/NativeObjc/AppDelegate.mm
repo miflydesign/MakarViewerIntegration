@@ -30,7 +30,13 @@ char** gArgv = nullptr;
                                               gArgc:gArgc
                                               gArgv:gArgv];
     
+    [self setOrientationLock:UIInterfaceOrientationMaskPortrait];
+    
     return YES;
+}
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+    return self.orientationLock;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

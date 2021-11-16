@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MakarViewerManager.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -56,6 +57,20 @@
 
 - (void)makarDidQuit {
     NSLog(@"Receive Makar did quit");
+}
+
+-(void)makarRequestOrientation:(NSString *)orientation{
+    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    if([orientation isEqualToString:@"portrait"]){
+        [appDelegate setOrientationLock:UIInterfaceOrientationMaskPortrait];
+    }else{
+        [appDelegate setOrientationLock:UIInterfaceOrientationMaskLandscape];
+    }
+    
+}
+
+-(void)makarRequestUserInfoPage:(NSString *)userId{
+    
 }
 
 @end
