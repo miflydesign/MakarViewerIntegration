@@ -13,8 +13,8 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer Framework and files. [Download](https://makar-viewer-embed.s3.ap-northeast-1.amazonaws.com/MakarViewer_3_3_3_ios_1639396782.zip) 
-- Clone or Download GitHub repo. [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git)
+- Download Makar Viewer Framework and files. [Download](https://makar-viewer-embed.s3.ap-northeast-1.amazonaws.com/MakarViewer_3_3_4_ios_1639742649.zip) 
+- Clone or Download GitHub repo. [MakarViewerIntegration](https://github.com/miflydesign/MakarViewerIntegration.git)
 - Download and Print AR Marker Image. [Sample Marker Image](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/ARSamplePoster.png)
 
 **2. Add UnityFramework.framework**
