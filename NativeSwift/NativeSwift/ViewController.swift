@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     
     @IBAction
     func btnEnterVR(){
-        let projectId = "52703099ec9adea8e12a8016b16b75e5"
+        let projectId = "a1d05d718e2ba6991806e0698ceaab34"
         MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .VR)
     }
     
