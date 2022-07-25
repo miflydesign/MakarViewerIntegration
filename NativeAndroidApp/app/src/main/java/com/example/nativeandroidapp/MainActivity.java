@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity
 
                 MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
                 makarViewerManager.InitializedWithKey("00000000-0000-0000-0000-000000000000");
-                makarViewerManager.ShowProjectWithProjectId("52703099ec9adea8e12a8016b16b75e5", MakarViewerManager.ProjectType.vr, getApplicationContext());
+                makarViewerManager.ShowProjectWithProjectId("ce4cd94181b8ea2f6052c0e0739878f1", MakarViewerManager.ProjectType.vr, getApplicationContext());
             }
         });
 
