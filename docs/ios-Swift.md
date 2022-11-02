@@ -69,10 +69,6 @@ func makarRequestOrientation(_ orientation: String!)
 ```
 MakarViewerManager.shared()?.showProject(withProjectId: PROJECT_ID, type: .AR)
 ```
-- Active MakarViewer and display user page
-```
-MakarViewerManager.shared()?.showUser(with: USER_ACCOUNT)
-```
 - Unload MakarViewe will release most of the memory it occupies, but not all of it. You will be able to run MakarViewer again.
 ```
 MakarViewerManager.shared()?.unload()
@@ -92,12 +88,6 @@ Learn more in `AppDelegate.swift` and `ViewController.swift`
   <br><img src="images/getProjectIdStep1.png">
 - Project ID is at the Top-Right corner, select and copy the ID, paste it in your code.
   <br><img src="images/getProjectIdStep2.png">
-
-Troubleshooting
--------
-- If your app crashing like "validateMTLScissorRect...", that's Apple's Metal issue, just disable Metal API Validation.\
- In Xcode 12: Scheme > Edit Scheme... > Run > Diagnostics > Metal API Validation\
- In Xcode 11 and below: Scheme > Edit Scheme... > Run > Options > Metal API Validation
 
 References
 -------

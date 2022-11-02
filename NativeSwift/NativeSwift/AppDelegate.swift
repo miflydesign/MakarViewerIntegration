@@ -60,8 +60,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         static func lockOrientation(_ orientation: UIInterfaceOrientationMask,
                                     andRotateTo rotateOrientation:UIInterfaceOrientation) {
-            self.lockOrientation(orientation)
             UIDevice.current.setValue(rotateOrientation.rawValue, forKey: "orientation")
+            self.lockOrientation(orientation)
         }
         
         static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
@@ -71,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
     }
-
+    
 
 }
 

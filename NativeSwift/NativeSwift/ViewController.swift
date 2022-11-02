@@ -18,26 +18,24 @@ class ViewController: UIViewController {
     
     @IBAction
     func btnEnterAR(){
-        let projectId = "2e011aec1f0be6547f9069bfe05816ee"
+        //TODO: 補正式機範例
+        //let projectId = "2e011aec1f0be6547f9069bfe05816ee"
+        let projectId = "ea30c2d1ac96901393d20b6adc5f8e17"
         MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .AR)        
     }
 
     @IBAction
     func btnEnterARSlam(){
+        //TODO: 補正式機範例
         let projectId = "ca6e231b9bde8183dc8f208ab619055a"
         MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .AR_SLAM)
     }
     
     @IBAction
     func btnEnterVR(){
-        let projectId = "ce4cd94181b8ea2f6052c0e0739878f1"
+        //TODO: 補正式機範例
+        let projectId = "9afc9adc7051393ceb639ea28100debd"
         MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .VR)
-    }
-    
-    @IBAction
-    func btnOpenUserTap(){
-        let userAccount = "Makarvr"
-        MakarViewerManager.shared()?.showUser(with: userAccount)
     }
     
     func setOrientation(_ orientation: UIInterfaceOrientationMask){
@@ -59,11 +57,7 @@ extension ViewController: MakarViewerDelegate{
     func makarDidQuit() {
         //TODO
     }
-    
-    func makarRequestUserInfoPage(_ userId: String!) {
-        //TODO
-    }
-    
+        
     func makarRequestOrientation(_ orientation: String!) {
         //Makar project require device orientation
         let targetOrientation = orientation == "portrait" ? UIInterfaceOrientationMask.portrait: UIInterfaceOrientationMask.landscape
