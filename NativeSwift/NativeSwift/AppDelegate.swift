@@ -11,7 +11,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    var orientationLock = UIInterfaceOrientationMask.all
+    
+    //Setup orientation portrait, ignore Target setting
+    var orientationLock = UIInterfaceOrientationMask.portrait
 
     let MAKAR_API_KEY = "00000000-0000-0000-0000-000000000000"
 
