@@ -18,23 +18,20 @@ class ViewController: UIViewController {
     
     @IBAction
     func btnEnterAR(){
-        //TODO: 補正式機範例
-        //let projectId = "2e011aec1f0be6547f9069bfe05816ee"
-        let projectId = "ea30c2d1ac96901393d20b6adc5f8e17"
+        let projectId = "2e011aec1f0be6547f9069bfe05816ee"
+        
         MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .AR)        
     }
 
     @IBAction
     func btnEnterARSlam(){
-        //TODO: 補正式機範例
         let projectId = "ca6e231b9bde8183dc8f208ab619055a"
         MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .AR_SLAM)
     }
     
     @IBAction
     func btnEnterVR(){
-        //TODO: 補正式機範例
-        let projectId = "9afc9adc7051393ceb639ea28100debd"
+        let projectId = "a1d05d718e2ba6991806e0698ceaab34"
         MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .VR)
     }
     
