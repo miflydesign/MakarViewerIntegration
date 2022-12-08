@@ -62,7 +62,6 @@ MakarViewerManager.shared().initialized(withKey: MAKAR_API_KEY,
 func makarDidLoad() 
 func makarDidUnload()
 func makarDidQuit()
-func makarRequestUserInfoPage(_ userId: String!)
 func makarRequestOrientation(_ orientation: String!)
 ```
 - Active MakarViewer and load project

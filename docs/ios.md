@@ -56,7 +56,6 @@ Script
 -(void)makarDidLoad;
 -(void)makarDidUnload;
 -(void)makarDidQuit;
--(void)makarRequestUserInfoPage:(NSString*) userId;
 -(void)makarRequestOrientation:(NSString*) orientation;
 ```
 - Active MakarViewer and load project
