@@ -13,13 +13,13 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer Framework and files. [Download](https://makar-viewer-embed.s3.ap-northeast-1.amazonaws.com/MakarViewer_3_4_6_ios_1684396170.zip) 
+- Download Frameworks and files. [Download](https://makar-viewer-embed.s3.ap-northeast-1.amazonaws.com/MakarViewer_3_4_6_ios_1684396170.zip) 
 - Clone or Download GitHub repo. [MakarViewerIntegration](https://github.com/miflydesign/MakarViewerIntegration.git)
 - Download and Print AR Marker Image. [Sample Marker Image](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/ARSamplePoster.png)
 
 **2. Add UnityFramework.framework**
 With this step we add Makar Viewer in the form of a framework to NativeSwift.
-- Put UnityFramework.framework and files we just download in your project.
+- Drag Frameworks and other files we just download into your project.
 - Xcode auto create Bridging Header file.
 <br><img src="images/ios-Swift/createBridgingHeader.png">
 - Add following code in Bridging Header file.
@@ -29,10 +29,12 @@ With this step we add Makar Viewer in the form of a framework to NativeSwift.
 - select NativeSwift target from NativeSwift project
 - in "General" tab / "Frameworks, Libraries, and Embedded Content"
 - Set "UnityFramework.framework" Embed value is "Embed & Sign"
+- Set "NatCorder.framework" Embed value is "Embed & Sign"
   <br><img src="images/ios-Swift/addToEmbeddedContent.png">
 - in "Build Settings" tab, set "Enable Bitcode" to "No"
 - in "Build Phases" tab, expand "Link Binary With Libraries"
 - remove UnityFramework.framework from the list (select it and press - )
+- remove NatCorder.framework from the list (select it and press - )
   <br><img src="images/ios-Swift/removeLink.png">
 
 **4. Setup Privacy**
