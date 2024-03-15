@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="adw-nh-SKL">
-                                <rect key="frame" x="160" y="373" width="94" height="150"/>
+                                <rect key="frame" x="160" y="403" width="94" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3j-sf-vqi">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
@@ -39,20 +39,6 @@
                                         <state key="normal" title="Enter VR"/>
                                         <connections>
                                             <action selector="btnEnterVR" destination="BYZ-38-t0r" eventType="touchUpInside" id="x1D-dR-G9F"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gV-on-hES">
-                                        <rect key="frame" x="0.0" y="90" width="83" height="30"/>
-                                        <state key="normal" title="Enter HAND"/>
-                                        <connections>
-                                            <action selector="btnEnterHand" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRJ-cq-GKL"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeH-W8-lNh">
-                                        <rect key="frame" x="0.0" y="120" width="67" height="30"/>
-                                        <state key="normal" title="Enter MIX"/>
-                                        <connections>
-                                            <action selector="btnEnterMix" destination="BYZ-38-t0r" eventType="touchUpInside" id="Evr-Ln-qZm"/>
                                         </connections>
                                     </button>
                                 </subviews>

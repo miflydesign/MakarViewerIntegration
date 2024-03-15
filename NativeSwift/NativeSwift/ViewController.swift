@@ -18,38 +18,33 @@ class ViewController: UIViewController {
     
     @IBAction
     func btnEnterAR(){
-        //TODO: 更新專案id(跟Android同步)，要測試提供的AR圖是否可使用
-        let projectId = "2e011aec1f0be6547f9069bfe05816ee"
+        let projectId = "c2ca3fda-83fb-4a74-83ea-41bbe084e0a9"
         MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .AR)
     }
 
     @IBAction
     func btnEnterARSlam(){
-        //TODO: 更新專案id(跟Android同步)
-        let projectId = "ca6e231b9bde8183dc8f208ab619055a"
+        let projectId = "830f8ae9117aa2bc30097ba16936bbe9"
         MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .AR_SLAM)
     }
     
     @IBAction
     func btnEnterVR(){
-        //TODO: 更新專案id(跟Android同步)
-        let projectId = "a1d05d718e2ba6991806e0698ceaab34"
+        let projectId = "f6574a6c-4595-4124-8c9f-a9605a8b5d8c"
         MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .VR)
     }
     
+    /*
     @IBAction
     func btnEnterHand(){
-        //TODO: 更新專案id(跟Android同步)
-        let projectId = "a1d05d718e2ba6991806e0698ceaab34"
-        MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .HAND)
+        MakarViewerManager.shared()?.showProject(withProjectId: PROJECT_ID, type: .HAND)
     }
 
     @IBAction
     func btnEnterMix(){
-        //TODO: 更新專案id(跟Android同步)
-        let projectId = "a1d05d718e2ba6991806e0698ceaab34"
-        MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .MIX)
+        MakarViewerManager.shared()?.showProject(withProjectId: PROJECT_ID, type: .MIX)
     }
+     */
 
     func setOrientation(_ orientation: UIInterfaceOrientationMask){
         AppDelegate.AppUtility.lockOrientation(orientation, andRotateTo: UIInterfaceOrientation.portrait)
