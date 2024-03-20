@@ -13,7 +13,7 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Frameworks and files. [Download](https://makar-viewer-embed.s3.ap-northeast-1.amazonaws.com/MakarViewer_3_5_0_0_ios_1710491108.zip) 
+- Download Frameworks and files. [Download](https://makar-viewer-embed.s3.ap-northeast-1.amazonaws.com/MakarViewer_3_5_0_0_ios_1710915004.zip) 
 - Clone or Download GitHub repo. [MakarViewerIntegration](https://github.com/miflydesign/MakarViewerIntegration.git)
 - Download and Print AR Marker Image. [Sample Marker Image](https://makar-viewer-embed.s3.ap-northeast-1.amazonaws.com/ARSamplePoster2.jpg)
 
