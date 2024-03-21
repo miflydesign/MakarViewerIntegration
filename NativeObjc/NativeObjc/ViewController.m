@@ -24,19 +24,19 @@
 
 - (IBAction)btnEnterAR:(id)sender
 {
-    NSString *projectId = @"2e011aec1f0be6547f9069bfe05816ee";
+    NSString *projectId = @"c2ca3fda-83fb-4a74-83ea-41bbe084e0a9";
     [[MakarViewerManager shared] showProjectWithProjectId:projectId type: AR];
 }
 
 - (IBAction)btnEnterARSlam:(id)sender
 {
-    NSString *projectId = @"ca6e231b9bde8183dc8f208ab619055a";
+    NSString *projectId = @"830f8ae9117aa2bc30097ba16936bbe9";
     [[MakarViewerManager shared] showProjectWithProjectId:projectId type: AR_SLAM];
 }
 
 - (IBAction)btnEnterVr:(id)sender
 {
-    NSString *projectId = @"a1d05d718e2ba6991806e0698ceaab34";
+    NSString *projectId = @"f6574a6c-4595-4124-8c9f-a9605a8b5d8c";
     [[MakarViewerManager shared] showProjectWithProjectId:projectId type: VR];
 }
 
