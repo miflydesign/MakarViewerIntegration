@@ -8,15 +8,15 @@ Pre-requisites
 
 Requirements
 --------------
-- Android Studio 3.5.3+
-- Gradle 3.6.0+
+- Android Studio 2021.3.1+
+- Gradle 4.0.1+
 
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer aar [MakarViewer](https://makar-viewer-embed.s3.ap-northeast-1.amazonaws.com/MakarViewer_3_4_6_android_1684466220.zip). 
+- Download Makar Viewer aar [MakarViewer](https://makar-viewer-embed.s3.ap-northeast-1.amazonaws.com/MakarViewer_3_5_0_0_android_1710905588.zip). 
 - Clone or Download GitHub repo [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git).
-- Download and Print AR Marker Image. [Sample Marker Image](https://makar-viewer-embed.s3-ap-northeast-1.amazonaws.com/ARSamplePoster.png).
+- Download and Print AR Marker Image. [Sample Marker Image](https://makar-viewer-embed.s3.ap-northeast-1.amazonaws.com/ARSamplePoster2.jpg).
 
 **2. Add Unity Library module to NativeAndroidApp**
 - Put aar file in libs folder

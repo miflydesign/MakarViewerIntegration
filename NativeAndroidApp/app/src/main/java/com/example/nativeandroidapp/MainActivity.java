@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity
 
                 MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
                 makarViewerManager.InitializedWithKey("00000000-0000-0000-0000-000000000000");
-                makarViewerManager.ShowProjectWithProjectId("2e011aec1f0be6547f9069bfe05816ee", MakarViewerManager.ProjectType.ar, getApplicationContext());
+                makarViewerManager.ShowProjectWithProjectId("c2ca3fda-83fb-4a74-83ea-41bbe084e0a9", MakarViewerManager.ProjectType.ar, getApplicationContext());
             }
         });
 
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity
 
                 MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
                 makarViewerManager.InitializedWithKey("00000000-0000-0000-0000-000000000000");
-                makarViewerManager.ShowProjectWithProjectId("710a2900eab92b1a88a71171c3e6bb69", MakarViewerManager.ProjectType.ar_slam, getApplicationContext());
+                makarViewerManager.ShowProjectWithProjectId("830f8ae9117aa2bc30097ba16936bbe9", MakarViewerManager.ProjectType.ar_slam, getApplicationContext());
             }
         });
 
@@ -50,22 +50,33 @@ public class MainActivity extends AppCompatActivity
 
                 MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
                 makarViewerManager.InitializedWithKey("00000000-0000-0000-0000-000000000000");
-                makarViewerManager.ShowProjectWithProjectId("ce4cd94181b8ea2f6052c0e0739878f1", MakarViewerManager.ProjectType.vr, getApplicationContext());
+                makarViewerManager.ShowProjectWithProjectId("f6574a6c-4595-4124-8c9f-a9605a8b5d8c", MakarViewerManager.ProjectType.vr, getApplicationContext());
             }
         });
 
-        Button showUserIdBtn = findViewById(R.id.showUserIdBtn);
-        showUserIdBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-
-                MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
-                makarViewerManager.InitializedWithKey("00000000-0000-0000-0000-000000000000");
-                makarViewerManager.ShowUserWith( "Makarvr", getApplicationContext());
-
-            }
-        });
+//        Button showHandProjectBtn = findViewById(R.id.showHandProjectBtn);
+//        showHandProjectBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v)
+//            {
+//
+//                MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
+//                makarViewerManager.InitializedWithKey("00000000-0000-0000-0000-000000000000");
+//                makarViewerManager.ShowProjectWithProjectId(PROJECT_ID, MakarViewerManager.ProjectType.hand, getApplicationContext());
+//            }
+//        });
+//
+//        Button showMixProjectBtn = findViewById(R.id.showMixProjectBtn);
+//        showMixProjectBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v)
+//            {
+//
+//                MakarViewerManager makarViewerManager = MakarViewerManager.getInstance();
+//                makarViewerManager.InitializedWithKey("00000000-0000-0000-0000-000000000000");
+//                makarViewerManager.ShowProjectWithProjectId(PROJECT_ID, MakarViewerManager.ProjectType.mix, getApplicationContext());
+//            }
+//        });
     }
 
 }
