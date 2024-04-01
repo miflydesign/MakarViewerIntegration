@@ -18,23 +18,34 @@ class ViewController: UIViewController {
     
     @IBAction
     func btnEnterAR(){
-        let projectId = "2e011aec1f0be6547f9069bfe05816ee"
-        
-        MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .AR)        
+        let projectId = "c2ca3fda-83fb-4a74-83ea-41bbe084e0a9"
+        MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .AR)
     }
 
     @IBAction
     func btnEnterARSlam(){
-        let projectId = "ca6e231b9bde8183dc8f208ab619055a"
+        let projectId = "830f8ae9117aa2bc30097ba16936bbe9"
         MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .AR_SLAM)
     }
     
     @IBAction
     func btnEnterVR(){
-        let projectId = "a1d05d718e2ba6991806e0698ceaab34"
+        let projectId = "f6574a6c-4595-4124-8c9f-a9605a8b5d8c"
         MakarViewerManager.shared()?.showProject(withProjectId: projectId, type: .VR)
     }
     
+    /*
+    @IBAction
+    func btnEnterHand(){
+        MakarViewerManager.shared()?.showProject(withProjectId: PROJECT_ID, type: .HAND)
+    }
+
+    @IBAction
+    func btnEnterMix(){
+        MakarViewerManager.shared()?.showProject(withProjectId: PROJECT_ID, type: .MIX)
+    }
+     */
+
     func setOrientation(_ orientation: UIInterfaceOrientationMask){
         AppDelegate.AppUtility.lockOrientation(orientation, andRotateTo: UIInterfaceOrientation.portrait)
     }
