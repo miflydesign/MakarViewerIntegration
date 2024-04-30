@@ -14,7 +14,7 @@ Requirements
 Getting Started
 --------------
 **1. Get source**
-- Download Makar Viewer aar [MakarViewer](https://makar-viewer-embed.s3.ap-northeast-1.amazonaws.com/MakarViewer_3_5_0_0_android_1710905588.zip). 
+- Download Makar Viewer aar [MakarViewer](https://makar-viewer-embed.s3.ap-northeast-1.amazonaws.com/MakarViewer_3_5_0_1_android_1714472098.zip). 
 - Clone or Download GitHub repo [MakarViewerIntegration](https://github.com/vml933/MakarViewerIntegration.git).
 - Download and Print AR Marker Image. [Sample Marker Image](https://makar-viewer-embed.s3.ap-northeast-1.amazonaws.com/ARSamplePoster2.jpg).
 
